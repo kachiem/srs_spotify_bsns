@@ -1,2 +1,3 @@
 # things to ignore.
 data/
+notebooks/.ipynb_checkpoints/
