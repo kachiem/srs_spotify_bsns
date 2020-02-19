@@ -26,3 +26,14 @@ def json_to_array(path):
     
     else:
         print("Error: input must be path")
+
+
+def json_to_array(path):
+    if path != "":
+        json = pd.read_json(path)
+        np_array = np.asarray(json)
+        print(np_array.shape)  
+        return np_array
+    
+    else:
+        print("Error: input must be str(path)")
